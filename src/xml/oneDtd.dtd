@@ -1,0 +1,7 @@
+<!ELEMENT 道路 (路灯 *)>
+<!ELEMENT 路灯 (编号,位置,维修电话)>
+<!ELEMENT 编号 (#PCDATA)>
+<!ELEMENT 位置 (#PCDATA)>
+<!ELEMENT 维修电话 (#PCDATA)>
+<!ATTLIST 路灯 状态 (亮|灭) #REQUIRED>
+<!ATTLIST 维修电话 号码 CDATA #FIXED "15643">
